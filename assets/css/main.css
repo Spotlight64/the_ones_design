@@ -1,0 +1,235 @@
+/*
+======================================================================
+
+    The Ones Design Main Stylesheet
+    04-26-2020
+
+    --------------------------------------------------
+
+    TOC:
+    # Imports
+    # Main
+    # Bootstrap
+        ## Dropdown
+    # Custom
+        ## Selection
+        ## Cursor*
+        ## Scrollbar*
+        ## Tooltip
+        ## Shadow
+        ## Rotate
+        ## Font
+    # Utility Classes
+        ## Text Align
+        ## Float
+        ## Text Tools
+        ## Round Class
+        ## Shadow Colors
+        ## Material Depth
+        ## Material Icons Sizes
+        ## Image Sizes
+        ## Row Tools
+        ## List
+    # Global Classes
+        ## Button Classes
+        ## Typography Classes
+    # Pages
+        ## Override
+        ## General
+            ### General - Button
+            ### General - Dropdown
+            ### General - Section
+            ### General - Slogan
+            ### General - Center
+            ### General - Links
+            ### General - Navigation
+        ## Home
+        ## Product
+        ## About
+        ## Contact
+
+    # Snippets
+        ## 
+
+======================================================================
+*/
+
+/* # Main
+* ----------------------------------------------------- */
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+/* # Pages
+* ----------------------------------------------------- */
+
+/* ## General */
+.content-wrapper {
+  padding: 2.5rem 0;
+}
+
+.media-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ### Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(163, 163, 163); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffe77b; 
+}
+
+/* ### General - Navigation */
+.nav-item {
+  color: #FFFFFF;
+}
+
+/* change the link color */
+.dropdown-menu-list > .dropdown-item {
+  color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.dropdown-menu-list > .dropdown-item:hover {
+  background-color: #444444;
+  color: rgba(255,255,255,.8);
+}
+
+/* ### Input box */
+.search-container > ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255,255,255,.6) !important;
+  opacity: 1; /* Firefox */
+}
+
+/* ## Home */
+.home-paragraph {
+  font-size: 20px;
+}
+
+#home.s-section {
+  padding: 3rem;
+  background-color: #737155;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  background-color: #000000;
+}
+
+.s-background {
+  background-image: url("/assets/images/home_background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  margin-top: 58px;
+  position: relative;
+}
+
+.shadow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.shadow-text-header {
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+}
+
+#video.s-section {
+  padding: 3rem;
+  background-color: #001715;
+  background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+}
+
+.video-column {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* ## Product */
+#product.s-section {
+  padding: 3rem;
+  background-color: #241600;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+  margin-top: 58px;
+}
+
+.product-column {
+  margin-bottom: 4rem;
+}
+
+.product-icon {
+  text-align: center;
+}
+
+.product-text {
+  text-align: center;
+}
+
+.product-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.product-desc {
+  font-family: 'Basier Circle';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 15px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.product-pax {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.zoomin-image{
+  width: auto;
+  height: 100%;
+}
+
+/* ## Support */
+#support.s-section {
+  margin-top: 58px;
+}
